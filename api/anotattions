@@ -1,0 +1,7 @@
+-- Instalando dependencias
+npm i 
+npm install
+
+-- Instalando e rodando api backend
+sudo npm install --unsafe-perm -g sqlite3
+npm start
