@@ -1,0 +1,13 @@
+---- Curso angular Alura
+ng new alura-pic
+
+ng serve --open
+-- Instalação da biblioteca bootstrap
+
+npm install bootstrap@4.1.1 --save
+"styles": [ 
+    "src/styles.css", 
+    "./node_modules/bootstrap/dist/css/bootstrap.min.css"],
+"scripts": []
+
+ng new photo/photo
