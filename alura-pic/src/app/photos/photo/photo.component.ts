@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-photo',
@@ -11,5 +11,8 @@ export class PhotoComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  @Input() description = '';
+  @Input() url = '';
 
 }

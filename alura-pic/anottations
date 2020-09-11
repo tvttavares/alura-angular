@@ -3,11 +3,15 @@ ng new alura-pic
 
 ng serve --open
 -- Instalação da biblioteca bootstrap
-
 npm install bootstrap@4.1.1 --save
+
 "styles": [ 
     "src/styles.css", 
     "./node_modules/bootstrap/dist/css/bootstrap.min.css"],
 "scripts": []
 
-ng new photo/photo
+-- criando o primeiro componente
+ng g c photos/photo
+ 
+ -- criando o modulo de photos
+ng g m photos
