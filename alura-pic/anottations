@@ -27,3 +27,8 @@ http://localhost:3000/flavio/photos
 ng g s photos/photo/photo
 
 -- criando entidade foto
+
+-- criando componente photo-list
+g g c photos/photos-list
+g g c photos/photos-form
+
