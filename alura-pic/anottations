@@ -32,3 +32,8 @@ ng g s photos/photo/photo
 g g c photos/photos-list
 g g c photos/photos-form
 
+-- gerando modulo de erros
+ng g m errors
+ng g c errors/not-found
+
+ng g c photos/photos-list/photos
