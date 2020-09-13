@@ -19,3 +19,6 @@ ng g m photos
 -- Instalando e rodando api backend
 sudo npm install --unsafe-perm -g sqlite3
 npm start
+
+-- api
+http://localhost:3000/flavio/photos
