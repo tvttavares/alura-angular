@@ -22,3 +22,8 @@ npm start
 
 -- api
 http://localhost:3000/flavio/photos
+
+-- criando o servico
+ng g s photos/photo/photo
+
+-- criando entidade foto

@@ -1,5 +1,5 @@
+import { PhotoService } from './photos/photo/photo.service';
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -8,11 +8,14 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppComponent {
 
-  photos: Object[] = []
+  photos: Object[] = [];
 
-  constructor(http: HttpClient) {
-    http.get<Object[]>("http://localhost:3000/flavio/photos")
-      .subscribe(photos => this.photos = photos);
+  constructor(photoService: PhotoService) {
+
+    photoService
+      .listFromUser('flavio')
+      .subscribe(photos => this.photos = photos
+      );
   }
 
 }
