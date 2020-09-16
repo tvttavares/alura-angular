@@ -8,13 +8,15 @@ import { PhotosListComponent } from './photos-list.component';
 
 import { PhotoModule } from './../photo/photo.module';
 import { CardModule } from './../../shared/components/card/card.module';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
     PhotosListComponent,
     PhotosComponent,
     LoadButtonComponent,
-    FilterByDescription
+    FilterByDescription,
+    SearchComponent
   ],
   imports: [
     CommonModule,

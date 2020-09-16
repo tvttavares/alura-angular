@@ -43,3 +43,10 @@ ng g c photos/photos-list/photos
 ng g c photos/photos-list/load-button
 
 -- instalando o fontawesome
+npm install font-awesome@4.7.0
+
+-- criando componente compartilhado
+ng g c shared/components/card
+
+-- componentizando a busca/search
+ng g c photos/photos-list/search
