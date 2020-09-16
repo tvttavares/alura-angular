@@ -36,4 +36,5 @@ g g c photos/photos-form
 ng g m errors
 ng g c errors/not-found
 
+-- criando componente exclusivo para listar fotos
 ng g c photos/photos-list/photos
