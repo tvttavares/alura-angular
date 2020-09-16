@@ -1,11 +1,6 @@
-<!-- 
-<ol class="list-unstyled row">
-    <li *ngFor="let photo of photos" class="col-4">
-        <app-photo [url]="photo.url" [description]="photo.description">
-        </app-photo>
-    </li>
-</ol> 
--->
+<p class="text-center text-muted" *ngIf="!photos.length">
+    Sorry, no photos
+</p>
 
 
 <ol class="list-unstyled">
