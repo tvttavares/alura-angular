@@ -7,6 +7,7 @@ import { PhotosComponent } from './photos/photos.component';
 import { PhotosListComponent } from './photos-list.component';
 
 import { PhotoModule } from './../photo/photo.module';
+import { CardModule } from './../../shared/components/card/card.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { PhotoModule } from './../photo/photo.module';
   ],
   imports: [
     CommonModule,
-    PhotoModule
+    PhotoModule,
+    CardModule
   ]
 })
 export class PhotosListModule { }
