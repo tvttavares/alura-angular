@@ -38,3 +38,6 @@ ng g c errors/not-found
 
 -- criando componente exclusivo para listar fotos
 ng g c photos/photos-list/photos
+
+-- criando botao de carregar mais fotos
+ng g c photos/photos-list/load-button
