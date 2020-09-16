@@ -50,3 +50,7 @@ ng g c shared/components/card
 
 -- componentizando a busca/search
 ng g c photos/photos-list/search
+
+-- criacao de diretiva 
+ng g d shared/directives/darken-on-hover/darken-on-hover
+ng g m shared/directives/darken-on-hover/darken-on-hover

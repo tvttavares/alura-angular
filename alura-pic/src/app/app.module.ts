@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 
 import { PhotosModule } from './photos/photos.module';
 import { ErrorsModule } from './errors/errors.module';
-import { CardComponent } from './shared/components/card/card.component';
 
 @NgModule({
   declarations: [
