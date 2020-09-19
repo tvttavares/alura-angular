@@ -54,3 +54,8 @@ ng g c photos/photos-list/search
 -- criacao de diretiva 
 ng g d shared/directives/darken-on-hover/darken-on-hover
 ng g m shared/directives/darken-on-hover/darken-on-hover
+-- ----------------------------------
+-- criando componente de autenticacao signin
+ng g m home
+
+ng g c home/sigin
