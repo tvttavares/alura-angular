@@ -1,4 +1,6 @@
----- Curso angular Alura
+-- --------- Curso angular Alura ---------
+-- ---- Inicio da Primeira parte
+-- ---- Fundamentos
 ng new alura-pic
 
 ng serve --open
@@ -54,7 +56,9 @@ ng g c photos/photos-list/search
 -- criacao de diretiva 
 ng g d shared/directives/darken-on-hover/darken-on-hover
 ng g m shared/directives/darken-on-hover/darken-on-hover
--- ----------------------------------
+-- -----------------------------------------------------
+-- ---- Inicio da Segunda parte
+-- ---- Autenticacao
 -- criando componente de autenticacao signin
 ng g m home
 

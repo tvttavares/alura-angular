@@ -1,4 +1,3 @@
-import { HomeModule } from './home/home.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -7,7 +6,8 @@ import { AppComponent } from './app.component';
 
 import { PhotosModule } from './photos/photos.module';
 import { ErrorsModule } from './errors/errors.module';
-
+import { VmessageModule } from './shared/components/vmessage/vmessage.module';
+import { HomeModule } from './home/home.module';
 @NgModule({
   declarations: [
     AppComponent
@@ -17,7 +17,8 @@ import { ErrorsModule } from './errors/errors.module';
     AppRoutingModule,
     PhotosModule,
     ErrorsModule,
-    HomeModule
+    HomeModule,
+    VmessageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
