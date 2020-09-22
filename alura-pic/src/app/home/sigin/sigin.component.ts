@@ -1,6 +1,9 @@
-import { AuthService } from './../../core/auth.service';
-import { Component, OnInit } from '@angular/core';
+import { PlataformDetectorService } from './../../core/plataform-detector/plataform-detector.service';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+
+import { AuthService } from '../../core/auth/auth.service';
 
 @Component({
   selector: 'app-sigin',
@@ -11,8 +14,13 @@ export class SiginComponent implements OnInit {
 
   loginForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder,
-    private authService: AuthService) { }
+  @ViewChild('userNameInput') usernameInput: ElementRef<HTMLInputElement>;
+
+  constructor(
+    private formBuilder: FormBuilder,
+    private authService: AuthService,
+    private router: Router,
+    private plataformDetectorService: PlataformDetectorService) { }
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
@@ -28,10 +36,13 @@ export class SiginComponent implements OnInit {
     this.authService
       .authenticate(userName, password)
       .subscribe(
-        () => console.log('autenticado'),
+        // () => this.router.navigateByUrl('user/' + userName),
+        () => this.router.navigate(['user', userName]),
         err => {
           console.log(err);
           this.loginForm.reset();
+          this.plataformDetectorService.isPlataformBrowser() &&
+            this.usernameInput.nativeElement.focus();
           alert('Invalid user name or password');
         }
       );
