@@ -8,6 +8,8 @@ import { PhotosModule } from './photos/photos.module';
 import { ErrorsModule } from './errors/errors.module';
 import { VmessageModule } from './shared/components/vmessage/vmessage.module';
 import { HomeModule } from './home/home.module';
+import { CoreModule } from './core/core.module';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -18,7 +20,8 @@ import { HomeModule } from './home/home.module';
     PhotosModule,
     ErrorsModule,
     HomeModule,
-    VmessageModule
+    VmessageModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
