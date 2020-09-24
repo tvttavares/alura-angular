@@ -63,3 +63,12 @@ ng g m shared/directives/darken-on-hover/darken-on-hover
 ng g m home
 
 ng g c home/sigin
+
+ng g c shared/components/vmessage
+
+-- Gerando componente de servico core para autenticacao
+ng g s core/auth
+
+login no alurapic
+userName: flavio
+password: 12345
