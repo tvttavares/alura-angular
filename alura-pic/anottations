@@ -72,3 +72,9 @@ ng g s core/auth
 login no alurapic
 userName: flavio
 password: 12345
+
+-- armazenamento do token via token service
+ng g s core/token/token
+
+-- criando componente header
+ng g c core/header
