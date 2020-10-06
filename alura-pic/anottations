@@ -78,3 +78,9 @@ ng g s core/token/token
 
 -- criando componente header
 ng g c core/header
+
+-- payload
+npm install jwt-decode@2.2.0
+
+-- criacao de modulo para armazenar o token
+ng g s core/user/user
