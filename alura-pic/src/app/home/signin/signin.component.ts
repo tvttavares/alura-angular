@@ -1,4 +1,4 @@
-import { PlataformDetectorService } from './../../core/plataform-detector/plataform-detector.service';
+import { PlataformDetectorService } from '../../core/plataform-detector/plataform-detector.service';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -7,10 +7,10 @@ import { AuthService } from '../../core/auth/auth.service';
 
 @Component({
   selector: 'app-sigin',
-  templateUrl: './sigin.component.html',
-  styleUrls: ['./sigin.component.css']
+  templateUrl: './signin.component.html',
+  styleUrls: ['./signin.component.css']
 })
-export class SiginComponent implements OnInit {
+export class SigninComponent implements OnInit {
 
   loginForm: FormGroup;
 

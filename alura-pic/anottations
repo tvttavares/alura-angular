@@ -1,3 +1,8 @@
+-- Auto Format
+    On Windows Shift + Alt + F.
+    On Mac Shift + Option + F.
+    On Linux Ctrl + Shift + I.
+
 -- --------- Curso angular Alura ---------
 -- ---- Inicio da Primeira parte
 -- ---- Fundamentos
@@ -84,3 +89,6 @@ npm install jwt-decode@2.2.0
 
 -- criacao de modulo para armazenar o token
 ng g s core/user/user
+
+-- criacao modulo de cadastro sign up
+ng g c home/signup

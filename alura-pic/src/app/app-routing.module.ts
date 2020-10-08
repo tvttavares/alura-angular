@@ -4,15 +4,20 @@ import { Routes, RouterModule } from '@angular/router';
 import { PhotosFormComponent } from './photos/photos-form/photos-form.component';
 import { PhotosListComponent } from './photos/photos-list/photos-list.component';
 import { AuthGuard } from './core/auth/auth.guard';
-import { SiginComponent } from './home/sigin/sigin.component';
+import { SigninComponent } from './home/signin/signin.component';
+import { SignupComponent } from './home/signup/signup.component';
 import { PhotoListResolver } from './photos/photos-list/photo-list.resolver';
 import { NotFoundComponent } from './errors/not-found/not-found.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: SiginComponent,
+    component: SigninComponent,
     canActivate: [AuthGuard]
+  },
+  {
+    path: 'signup',
+    component: SignupComponent,
   },
   {
     path: 'user/:userName',
