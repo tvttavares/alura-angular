@@ -9,7 +9,7 @@
 
     <div class="form-group">
         <input #userNameInput formControlName="password" type="password" class="form-control" placeholder="password">
-        <app-vmessage *ngIf="loginForm.get('password').errors?.required" text="Password is required!">></app-vmessage>
+        <app-vmessage *ngIf="loginForm.get('password').errors?.required" text="Password is required!"></app-vmessage>
     </div>
     <button [disabled]="loginForm.invalid" type="submit" class="btn btn-primary btn-block">
         login
@@ -17,4 +17,4 @@
 
 </form>
 
-<p>Not a user?<a>Register now</a></p>
+<p>Not a user? <a [routerLink]="['/signup']">Register now</a></p>
