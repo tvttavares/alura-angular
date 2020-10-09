@@ -3,11 +3,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { VmessageModule } from './../shared/components/vmessage/vmessage.module';
 import { SignInComponent } from './signin/signin.component';
 import { SignUpComponent } from './signup/signup.component';
-import { HomeComponent } from './home.component';
 import { SignUpService } from './signup/signup.service';
+import { HomeRoutingModule } from './home.routing.module';
+import { HomeComponent } from './home.component';
+import { VMessageModule } from './../shared/components/vmessage/vmessage.module';
 
 @NgModule({
   declarations: [
@@ -19,9 +20,10 @@ import { SignUpService } from './signup/signup.service';
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    VmessageModule,
+    VMessageModule,
+    HomeRoutingModule,
     RouterModule
   ],
-  providers:[SignUpService]
+  providers: [SignUpService]
 })
 export class HomeModule { }

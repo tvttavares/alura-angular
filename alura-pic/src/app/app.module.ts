@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 
 import { PhotosModule } from './photos/photos.module';
 import { ErrorsModule } from './errors/errors.module';
-import { VmessageModule } from './shared/components/vmessage/vmessage.module';
 import { HomeModule } from './home/home.module';
 import { CoreModule } from './core/core.module';
 
@@ -18,9 +17,8 @@ import { CoreModule } from './core/core.module';
     BrowserModule,
     PhotosModule,
     ErrorsModule,
-    HomeModule,
-    VmessageModule,
     CoreModule,
+    HomeModule,
     AppRoutingModule
   ],
   providers: [],
