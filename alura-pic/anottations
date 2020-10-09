@@ -92,3 +92,7 @@ ng g s core/user/user
 
 -- criacao modulo de cadastro sign up
 ng g c home/signup
+
+-- Buildando o projeto com o projeto ficando na pasta
+/dist
+ng build --prod
